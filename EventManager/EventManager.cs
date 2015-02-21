@@ -8,5 +8,6 @@ namespace EventManager
     public static class EventManager
     {
         public static List<Event> events = new List<Event>();
+		//тут был Hozren
     }
 }
