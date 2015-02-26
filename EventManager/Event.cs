@@ -19,7 +19,7 @@ namespace EventManager
             this.id = id;
         }
 
-       /* public DateTime Check()
+        public DateTime Check()
         {
             DateTime dt;
             dt = DateTime.Now;
@@ -27,6 +27,6 @@ namespace EventManager
             ticks = (this.time - dt).Ticks;
             return new DateTime(ticks);
         }
-       */
+       
     }
 }
