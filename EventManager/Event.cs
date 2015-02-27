@@ -9,7 +9,7 @@ namespace EventManager
     {
         private string name, details;
         private int id;
-        private DateTime time;
+        public DateTime time;
 
         public Event(string name, DateTime time, string details, int id)
         {
