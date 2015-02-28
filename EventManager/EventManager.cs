@@ -29,9 +29,23 @@ namespace EventManager
                 {
                     number = i;
                     dt = events[i].time;
-                }
+                } 
             }
-            return events[number];
+                return events[number];
         }
-    }
-}
+
+        public static void Add(int id, string name, DateTime time, string description)
+        {
+            events.Add(new Event( name,  time,  description, id));
+        }
+        public static void Remove(int id)
+        {
+            for (int i = 0; i < events.Count; i++)
+            {
+                if (events[i].id == id) { events.RemoveAt(i); break; } 
+            }
+        }
+            }
+           
+        }
+
